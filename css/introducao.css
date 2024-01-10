@@ -1,0 +1,42 @@
+.introducao {
+  max-width: 1300px;
+  padding: 60px 60px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+.introducao img {
+  height: 400px;
+  width: 560px;
+}
+.introducao h1 {
+  font-family: Alice, Arial, sans-serif;
+  margin-bottom: 20px;
+  font-family: Alice;
+  font-size: 4rem;
+}
+.introducao p {
+  font-size: 1.8rem;
+  color: #4f4d4d;
+}
+@media (max-width: 1000px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+}

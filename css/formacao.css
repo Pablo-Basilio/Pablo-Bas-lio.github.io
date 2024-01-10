@@ -1,0 +1,134 @@
+.formacao {
+  background: #141414;
+  color: #ffff;
+}
+
+.formacao-container {
+  max-width: 1300px;
+  padding: 80px 20px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  position: relative;
+}
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ffaf00;
+  border-radius: 0% 100% 100% 0%;
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+}
+.formacao .subtitulos {
+  color: black;
+  max-width: 4ch;
+}
+.formacao .formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  max-width: 60ch;
+  margin-bottom: 40px;
+  color: #dad8d8;
+}
+.formacao-texto strong {
+  color: #ffffff;
+}
+.cursos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.curso {
+  flex: 1;
+  background: black;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.curso-nivel {
+  font-size: 0.875rem;
+  color: #dad8d8;
+  margin-bottom: 20px;
+  position: relative;
+}
+.curso-nivel::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 20px;
+  background: #ffaf00;
+  border-radius: 100% 0% 0% 100%;
+  position: absolute;
+  left: -30px;
+  top: -3px;
+}
+.curso-nome {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.curso-local {
+  font-size: 0.875rem;
+  color: #dad8d8;
+}
+.cursos-extra {
+  margin-bottom: 60px;
+}
+.formacao-extra h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #dad8d8;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: lighter;
+}
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -30px;
+}
+.cursos-extra h3::before {
+  background: url("../Images/cursos.svg") no-repeat center center;
+}
+.idiomas h3::before {
+  background: url("../Images/idiomas.svg") no-repeat center center;
+}
+.formacao-extra li {
+  font-size: 1rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.formacao-extra span {
+  color: #9f9d9d;
+}
+.cursos-extra li {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+  .formacao .subtitulos {
+    color: #ffffff;
+  }
+  .formacao .formacao-texto {
+    font-size: 1.2rem;
+    max-width: 100ch;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
